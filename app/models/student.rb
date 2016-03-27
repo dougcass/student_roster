@@ -4,7 +4,7 @@ class Student < ActiveRecord::Base
   validates :cell_phone, presence: true
   validates :cell_phone, length: { minimum: 10,
                           message: '10 digits please.' }
-  validates :first_name, :last_name, :cell_phone, :email, presence: true
+  validates :email, presence: true
   end
 
 
